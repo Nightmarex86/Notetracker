@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <title>Note taker</title>
+</head>
+<body>
+    <h1>Welcome to Note taker app</h1>
+    <h2>Take notes easily and efficiently</h2>
+    <h3>Click the button below to start taking notes</h3>
+    <button id="startButton">Start Taking Notes</button>
+    <div id="noteContainer" style="display: none;">
+        <h2>Your Notes</h2>
+        <label>Title</label>
+        <input type="text" id="noteTitle" placeholder="Chemistry"><br>
+        <textarea id="noteInput" rows="10" cols="30"></textarea><br>
+        <button id="saveButton">Save Note</button>
+        <button id="clearButton">Clear Notes</button>
+    </div><br>
+    <button id="viewNotesButton">View Saved Notes</button>
+    <div id="savedNotesContainer" style="display: none;">
+        <h2>Saved Notes</h2>
+        <ul id="notesList"></ul>
+        <button onclick="document.getElementById('savedNotesContainer').style.display='none'">Close</button>
+    </div><br>
+    <button id="deleteNotesButton">Delete All Notes</button>
+    <div id="deleteConfirmation" style="display: none;">
+        <p>Are you sure you want to delete all notes?</p>
+        <button id="confirmDeleteButton">Yes</button>
+        <button id="cancelDeleteButton">No</button>
+    </div>
+    <script type="module" src="../JS/Script.js"></script>
+</body>
+</html>
