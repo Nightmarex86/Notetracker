@@ -18,6 +18,7 @@
         <textarea id="noteInput" rows="10" cols="30"></textarea><br>
         <button id="saveButton">Save Note</button>
         <button id="clearButton">Clear Notes</button>
+        <button id="closeButton">Close</button>
     </div><br>
     <button id="viewNotesButton">View Saved Notes</button>
     <div id="savedNotesContainer" style="display: none;">
@@ -26,7 +27,7 @@
         <button onclick="document.getElementById('savedNotesContainer').style.display='none'">Close</button>
     </div><br>
     <button id="deleteNotesButton">Delete All Notes</button>
-    <div id="deleteConfirmation" style="display: none;">
+    <div id="deleteConfirmation" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 20px; border: 1px solid black;">
         <p>Are you sure you want to delete all notes?</p>
         <button id="confirmDeleteButton">Yes</button>
         <button id="cancelDeleteButton">No</button>
